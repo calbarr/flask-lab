@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <title>Student Directory</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    {% for student in students %}
-    <p><a href="/directory/{{ student.username }}">{{ student.first_name }} {{ student.last_name }}</a></p>
-    {% endfor %}
+    <h4>Student Directory</h4>
+        {% set count = 0 %}
+    <p style="text-align:center">
+        {% for student in students %}
+            {% set count = count + 1 %}
+            {% if count == 1 %}
+                <a class="one" href="/directory/{{ student.username }}">{{ student.first_name }} {{ student.last_name }}</a>
+            {% elif count == 2 %}
+                <a class="two" href="/directory/{{ student.username }}">{{ student.first_name }} {{ student.last_name }}</a>
+            {% elif count == 3 %}
+                {% set count = 0 %}
+                <a class="three" href="/directory/{{ student.username }}">{{ student.first_name }} {{ student.last_name }}</a></p><p style="text-align:center">
+            {%  endif %}
+        {% endfor %}
+    <img class="oxy" src="/images/campus_map.png"
+    alt="Occidental's Campus"
+style="width:60%;height:60%;">
 </body>
 </html>
+

@@ -1,15 +1,30 @@
-P.blocktext {
-    margin-left: auto;
-    margin-right: auto;
-    width: 6em;
+body {
+    background-color: rgb(255, 255, 255);
 }
 
-.center {
-    margin: auto;
-    width: 60%;
-    border: 3px solid #73AD21;
-    padding: 10px;
+a:link, a:visited {
+    background-color: orange;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
 }
+
+a:hover, a:active {
+    background-color: #FFAF0A;
+}
+
+img.oxy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    padding: 20px;
+
+}
+
 h4 {
     color: black;
     font-size: 48px;
@@ -17,9 +32,41 @@ h4 {
     font-family: "Baskerville", Helvetica, monospace;
 }
 
-p {
+a.one {
     color: rgb(64, 64, 64);
-    font-size: 1em;
-    text-align: center;
-    font-family: Times, monospace;
+    font-size: 1.5em;
+    padding: 9px;
+    font-family: Futura, monospace;
 }
+
+a.two {
+    color: rgb(64, 64, 64);
+    font-size: 1.5em;
+    padding: 9px;
+    font-family: Futura, monospace;
+}
+
+a.three {
+    color: rgb(64, 64, 64);
+    font-size: 1.5em;
+    padding: 9px;
+    font-family: Futura, monospace;
+}
+
+p {
+    text-align: center;
+}
+
+#peeps {
+    background-color: rgb(64, 64, 64);
+    color: orange;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Futura, monospace;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+    float: left;
+}
+
